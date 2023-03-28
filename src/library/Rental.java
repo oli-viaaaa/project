@@ -22,7 +22,7 @@ public class Rental {
 		this.phone = phone;
 		this.inventory = inventory;
 		this.period = period;
-	}
+	}                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 	public String getName() {
 		return name;

@@ -91,7 +91,7 @@ public class MovieForm extends JFrame implements ActionListener {
 			this.db.addMovie(movie);
 			
 			// 객체 성공적으로 등록 완료 메세지
-			JOptionPane.showMessageDialog(this, "요정이 완료되었습니다.");
+			JOptionPane.showMessageDialog(this, "영화정보가 저장되었습니다.");
 
 			// 영화 등록 후 현재 화면 닫기
 			this.dispose();

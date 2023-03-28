@@ -89,7 +89,7 @@ public class BookForm extends JFrame implements ActionListener {
 		this.db.addBook(book);
 
 		// 객체 성공적으로 등록 완료 메세지
-		JOptionPane.showMessageDialog(this, "요청이 완료되었습니다.");
+		JOptionPane.showMessageDialog(this, "도서 정보가 저장되었습니다.");
 
 		// 도서 등록 후 현재 화면 닫기
 		this.dispose();

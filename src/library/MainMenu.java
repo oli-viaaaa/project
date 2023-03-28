@@ -154,7 +154,6 @@ public class MainMenu extends JFrame implements ActionListener {
 			BookForm bookForm = new BookForm(db);
 			// 이동해갈 화면 보이기
 			bookForm.setVisible(true);
-
 		} else if (e.getSource() == movieButton) {
 			// 영화 등록폼이 눌렸을 경우
 			System.out.println("영화 등록");
@@ -164,7 +163,6 @@ public class MainMenu extends JFrame implements ActionListener {
 			MovieForm movieForm = new MovieForm(db);
 			// 이동해갈 화면 보이기
 			movieForm.setVisible(true);
-
 		} else if (e.getSource() == rentalButton) {
 			// 대출 등록 폼이 눌렸을 경우
 			System.out.println("대여 등록");
@@ -174,7 +172,6 @@ public class MainMenu extends JFrame implements ActionListener {
 			RentalForm rentalForm = new RentalForm(db);
 			// 이동해갈 화면 보이기
 			rentalForm.setVisible(true);
-
 		} else if (e.getSource() == bookListButton) {
 			System.out.println("도서 조회");
 			// 현재 화면 닫기
@@ -183,7 +180,6 @@ public class MainMenu extends JFrame implements ActionListener {
 			BookList bookList = new BookList(db);
 			// 이동해갈 화면 보이기
 			bookList.setVisible(true);
-
 		} else if (e.getSource() == movieListButton) {
 			System.out.println("영화 조회");
 			// 현재 화면 닫기
@@ -192,13 +188,11 @@ public class MainMenu extends JFrame implements ActionListener {
 			MovieList movieList = new MovieList(db);
 			// 이동해갈 화면 보이기
 			movieList.setVisible(true);
-
 		} else if (e.getSource() == rentalListButton) {
 			System.out.println("대여 조회");
 			this.dispose();
 			RentalList rentalList = new RentalList(db);
 			rentalList.setVisible(true);
-
 		} else if (e.getSource() == exitButton) {
 			System.exit(0);
 		}
