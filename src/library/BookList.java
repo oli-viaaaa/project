@@ -8,6 +8,7 @@ import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -67,6 +68,7 @@ public class BookList extends JFrame implements ActionListener {
 		// 입력 필드들이 놓을 input 패널 생성
 		JPanel inputPanel = new JPanel();
 		inputPanel.setLayout(new GridLayout(4, 2));
+		
 
 		// input 패널을 메인 패널에 다시 부착
 		mainPanel.add(inputPanel, BorderLayout.SOUTH);

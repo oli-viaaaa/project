@@ -29,13 +29,13 @@ public class RentalForm extends JFrame implements ActionListener {
 		inventoryField = new JTextField(10);
 		periodField = new JTextField(10);
 		
-		JLabel nameLabel = new JLabel("이름 : ");
-		JLabel phoneLabel = new JLabel("연락처 : ");
+		JLabel nameLabel = new JLabel("이        름 : ");
+		JLabel phoneLabel = new JLabel("연  락  처 : ");
 		JLabel inventoryLabel = new JLabel("대여목록 : ");
 		JLabel periodLabel = new JLabel("대여기간 : ");
 		
 		// 대여 추가 버튼 생성
-		JButton addButton = new JButton("추가");
+		JButton addButton = new JButton("저장");
 		
 		// 액션 리스너 부착(추가 버튼 클릭시 할일 정의)
 		// 버튼 클릭시 actionPerformed()가 호출됨.
@@ -87,7 +87,7 @@ public class RentalForm extends JFrame implements ActionListener {
 			this.db.addRental(rental);
 			
 			// 객체 성공적으로 등록 완료 메세지
-			JOptionPane.showMessageDialog(this, "등록완료");
+			JOptionPane.showMessageDialog(this, "요청이 완료되었습니다.");
 
 			// 등록 후 현재 화면 닫기
 			this.dispose();

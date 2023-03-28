@@ -5,7 +5,7 @@ package library;
  */
 
 public class Book {
-	private int num; // 책 번호
+	private int num; 		// 도서 번호
 	private String writer; // 작가
 	private String name; // 제목
 	private String publisher; // 출판사

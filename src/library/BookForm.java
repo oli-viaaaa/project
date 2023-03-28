@@ -28,13 +28,14 @@ public class BookForm extends JFrame implements ActionListener {
 		nameField = new JTextField(10);
 		publisherField = new JTextField(10);
 
-		JLabel numLabel = new JLabel("구분번호 : ");
-		JLabel writerLabel = new JLabel("저자 : ");
-		JLabel nameLabel = new JLabel("제목 : ");
-		JLabel publisherLabel = new JLabel("출판사 : ");
+		JLabel numLabel = new JLabel("도서번호 : ");
+		JLabel writerLabel = new JLabel(" 저       자 : ");
+		JLabel nameLabel = new JLabel(" 제       목 : ");
+		JLabel publisherLabel = new JLabel("출  판  사 : ");
+		
 
 		// 도서 추가 버튼 생성
-		JButton addButton = new JButton("추가");
+		JButton addButton = new JButton("저장");
 
 		// 액션 리스너 부착(추가 버튼 클릭시 할일 정의)
 		// 버튼 클릭시 actionPerformed()가 호출됨.
@@ -56,6 +57,7 @@ public class BookForm extends JFrame implements ActionListener {
 		inputPanel.add(nameField);
 		inputPanel.add(publisherLabel);
 		inputPanel.add(publisherField);
+		
 
 		// 메인 패널에 input패널 부착
 		mainPanel.add(inputPanel, BorderLayout.NORTH);
@@ -87,7 +89,7 @@ public class BookForm extends JFrame implements ActionListener {
 		this.db.addBook(book);
 
 		// 객체 성공적으로 등록 완료 메세지
-		JOptionPane.showMessageDialog(this, "등록완료");
+		JOptionPane.showMessageDialog(this, "요청이 완료되었습니다.");
 
 		// 도서 등록 후 현재 화면 닫기
 		this.dispose();

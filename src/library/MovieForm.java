@@ -30,14 +30,15 @@ public class MovieForm extends JFrame implements ActionListener {
 		directorField = new JTextField(10);
 		timeFilField = new JTextField(10);
 		
-		JLabel genreLabel = new JLabel("장르 : ");
-		JLabel nameLabel = new JLabel("제목 : ");
-		JLabel ratingsLabel = new JLabel("평점 : ");
-		JLabel directorLabel = new JLabel("감독 : ");
-		JLabel timeLabel = new JLabel("상영시간 : ");
+		JLabel genreLabel = new JLabel(" 장       르 :");
+		JLabel nameLabel = new JLabel(" 제       목 :");
+		JLabel ratingsLabel = new JLabel(" 평       점 :");
+		JLabel directorLabel = new JLabel(" 감       독 :");
+		JLabel timeLabel = new JLabel("상영시간 :");
 		
 		// 추가 버튼 생성
-		JButton addButton = new JButton("추가");
+		JButton addButton = new JButton("저장");
+	
 		
 		// 액션 리스너 부착(추가 버튼 클릭시 할일 정의)
 		// 버튼 클릭시 actionPerformed()가 호출됨.
@@ -90,7 +91,7 @@ public class MovieForm extends JFrame implements ActionListener {
 			this.db.addMovie(movie);
 			
 			// 객체 성공적으로 등록 완료 메세지
-			JOptionPane.showMessageDialog(this, "등록완료");
+			JOptionPane.showMessageDialog(this, "요정이 완료되었습니다.");
 
 			// 영화 등록 후 현재 화면 닫기
 			this.dispose();
